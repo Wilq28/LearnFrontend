@@ -1,3 +1,56 @@
 body {
-    background-color: black;
+    background-color: white;
+}
+
+#container {
+    height: auto;
+    width: auto;
+}
+
+#topMenu {
+    height: 200px;
+    background-color: white;
+}
+
+.icone {
+    float:left;
+}
+
+#fb {
+    height: 30px;
+    margin-top: 60px;
+    padding-left: 170px;
+}
+
+#inst {
+    height: 30px;
+    margin-top: 60px;
+    padding-left: 35px;
+}
+
+#pint {
+    height: 30px;
+    margin-top: 60px;
+    padding-left: 35px;
+}
+
+#logo1 {
+    height: 175px;
+    width: 175px;
+    float:left;
+    padding-left: 300px;
+}
+
+#lupa {
+    height: 45px;
+    width: 45px;
+    float:left;
+    padding-left: 100px;
+    margin-top: 60px;
+}
+
+h5 {
+    float: left;
+    margin-top: 75px;
+    font-style:initial;
 }
