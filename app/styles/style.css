@@ -1,3 +1,85 @@
 body {
-    background-color: black;
+    background-color: white;
+}
+
+#container {
+    height: auto;
+    width: auto;
+}
+
+#topMenu {
+    height: 160px;
+    background-color: white;
+}
+
+.icone {
+    float:left;
+}
+
+#fb {
+    height: 30px;
+    margin-top: 70px;
+    padding-left: 170px;
+    border-radius: 5px;
+}
+
+#inst {
+    height: 30px;
+    margin-top: 70px;
+    padding-left: 35px;
+    border-radius: 5px;
+}
+
+#pint {
+    height: 30px;
+    margin-top: 70px;
+    padding-left: 35px;
+    border-radius: 5px;
+}
+
+#logo1 {
+    height: 175px;
+    width: 175px;
+    float:left;
+    padding-left: 300px;
+}
+
+#loupe {
+    height: 45px;
+    width: 45px;
+    float:left;
+    padding-left: 100px;
+    margin-top: 70px;
+}
+
+#logoSmall {
+    height: 40px;
+    width: 50px;
+    float:left;
+    padding-left: 40px;
+    margin-top: 70px; 
+}
+
+#basket {
+    height: 40px;
+    width: 50px;
+    float:left;
+    padding-left: 40px;
+    margin-top: 70px;  
+}
+
+h5 {
+    float: left;
+    margin-top: 85px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01px;
+}
+
+#nav {
+    clear:both;
+    height: 65px;
+    width: auto;
+    background-color: #FCC557;
 }
