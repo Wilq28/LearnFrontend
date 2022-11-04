@@ -1,85 +1,137 @@
-body {
-    background-color: white;
-    margin: 0;
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
 }
 
-#container {
-    height: auto;
-    width: auto;
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#text {
+    width:100%;
+    height: 30px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+#leftText {
+    font-size: 8px;
+    font-weight: 700;
+    width: 50%;
+    line-height: 15px;    
+    text-align: left;
+    float: left;
+    padding-left: 6%;
+}
+
+#rightText {
+    font-size: 8px;
+    font-weight: 700;
+    width: 50%;    
+    line-height: 15px;    
+    text-align: right;
+    float: left; 
+    padding-right: 8%;
 }
 
 #topMenu {
-    height: 160px;
+    width:100%;
+    height: 150px;
     background-color: white;
+    display:flex;
 }
 
-.icone {
-    float:left;
+.social {
+    width:35%;
+    height: 40px;    
+    float:letf;
+    padding-left: 125px;
+    margin: auto;
+    align-items: center;
+    margin-top:4%;
+}
+
+.social:hover{
+    cursor:pointer;
 }
 
 #fb {
-    height: 30px;
-    margin-top: 70px;
-    padding-left: 170px;
-    border-radius: 5px;
+    height: 32px;
 }
 
-#inst {
-    height: 30px;
-    margin-top: 70px;
+#icone {
+    height: 32px;
     padding-left: 15px;
-    border-radius: 5px;
 }
 
-#yt {
-    height: 30px;
-    margin-top: 70px;
-    padding-left: 15px;
-    border-radius: 5px;
+.logo{
+    width: 20%;
+    height: 100px;    
+    float:left;
 }
 
 #logo1 {
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 165px;
+    float:left;    
+    align-items: center;
+}
+
+.rightSide{
+    width: 45%;
+    height: 80px;   
     float:left;
-    padding-left: 300px;
+    margin-top:4%;    
 }
 
 #loupe {
     height: 45px;
     width: 45px;
     float:left;
-    padding-left: 100px;
-    margin-top: 70px;
+    padding-left: 80px;       
 }
 
 #logoSmall {
     height: 40px;
     width: 50px;
     float:left;
-    padding-left: 40px;
-    margin-top: 70px; 
+    padding-left: 40px;    
 }
 
 #basket {
     height: 40px;
     width: 50px;
     float:left;
-    padding-left: 40px;
-    margin-top: 70px;  
+    padding-left: 40px;      
 }
 
 h5 {
-    float: left;
-    margin-top: 85px;
-    font-family: 'Open Sans',sans-serif;
+    float: left;    
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.01px;
+    letter-spacing: 0.01px;    
+}
+
+.top-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    float: left;
+    display: flex;
 }
 
 #nav {
-    clear:both;
     height: 60px;
     width: 100%;
     background-color: #FCC557;
@@ -90,22 +142,106 @@ ol {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight:bold;
-    line-height: 400%;
-    display: inline-block;
-}
-
-ol a {
+    display: inline-table;
+    text-decoration: none;    
     color: black;
-    text-decoration: none;
-    display: block;
-
 }
 
-ol > li {
+.elements {
     float: left;
     width: 135px;
     border-right: 1px solid black;
+    margin-top: 22px;
+    line-height: 10px;   
+}
+
+#elements2 {
+    color: white; 
+}
+
+li:last-child
+{
+    border: none;    
+}
+
+ol > li > ul {
+    list-style-type: none;
+    padding: 8px;
+    margin-top: 20px;
+    display:none; 
+    position:absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: 100; 
+}
+
+ol > li:hover > ul {
+    display:block;
+}
+/* czyli jak ma wyglądac lista wewnętrzna ul (potomek ol > li), ale tylko wtedy, kiedy
+zachodzi hover elementu ol > li */
+
+ol > li > ul > li {
+    background-color: white;
+    height: 40px;
+    width: 1000px;
+    position:relative;    
+}
+
+ol > li > ul > li:hover {
+    cursor: pointer;    
+}
+
+.drop a {
+    color: gray;
+    text-align: left;
+    float: left;
+    padding-top: 20px;
+    margin-left: 5%   
+}
+
+.drop a:hover {
+    border-bottom: 2px solid gray;
+}
+
+#picMenu {
+    width:100%;
+    height: 600px;
+    display:flex;
+}
+
+#picture {
+    width:100%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-big {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+.header-small {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    font-weight:bold;
+}
+    
+@media only screen and (max-width:1550px) {
+    #container{
+        width: 1550px;
+    }
 }
