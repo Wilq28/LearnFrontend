@@ -154,7 +154,7 @@ ol {
     width: 135px;
     border-right: 1px solid black;
     margin-top: 22px;
-    line-height: 10px;   
+    line-height: 10px;  
 }
 
 #elements2 {
@@ -170,28 +170,41 @@ ol > li > ul {
     list-style-type: none;
     padding: 8px;
     margin-top: 20px;
-    display:none; 
+    visibility: hidden;
     position:absolute;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
-    z-index: 100; 
+    z-index: 100;
+    transition: 0.5s;
 }
 
 ol > li:hover > ul {
-    display:block;
+    visibility: visible;
+    transition-delay: 0s;
 }
+
 /* czyli jak ma wyglądac lista wewnętrzna ul (potomek ol > li), ale tylko wtedy, kiedy
 zachodzi hover elementu ol > li */
 
-ol > li > ul > li {
+#totalMenu {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#subMenu {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.drop {
     background-color: white;
     height: 40px;
-    width: 1000px;
+    width: 1200px;
     position:relative;    
 }
 
-ol > li > ul > li:hover {
+.drop:hover {
     cursor: pointer;    
 }
 
@@ -200,11 +213,30 @@ ol > li > ul > li:hover {
     text-align: left;
     float: left;
     padding-top: 20px;
-    margin-left: 5%   
+    margin-left: 50px; 
 }
 
 .drop a:hover {
     border-bottom: 2px solid gray;
+}
+
+#podMenu {
+    background-color: white;
+    height: 40px;   
+}
+
+#podMenu a {
+    color: gray;
+    text-align: left;
+    float: left;
+    margin-left: 80px;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+#podMenu a:hover {
+    border-bottom: 2px solid gray;
+    cursor: pointer;  
 }
 
 #picMenu {
